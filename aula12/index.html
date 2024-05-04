@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Componentes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div class="retangulo">
+        <div id="app">
+            <transition name="fade" mode="out-in">
+                <component :is="componenteAtual"></component>
+                <login-component v-if="currentPage === 'login'" @change-page="changePage"></login-component>
+                <signin-component v-else @change-page="changePage"></signin-component>
+            </transition>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
