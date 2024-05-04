@@ -1,6 +1,6 @@
 # 📝 Site de Formulário de Login e Registro (Sign in) usando Vue.js.
 
-## Link do site: loginasignin.netlify.app
+## Link do site: https://loginasignin.netlify.app/
 
 ## Recursos 🛠️
 
